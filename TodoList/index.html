@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- creating a to do list using a container todoblock -->
+        <div class="todoblock">
+            <!-- heading for the to fo list -->
+            <h2>To-Do List <img src="images/todoicon.png" alt=""> </h2>
+
+            <!-- adding a text-field to add a list-item -->
+            <div class="input-section">
+                <input type="text" id="input-box" placeholder="Type to add text">
+                <button onclick="addTask()">Add</button>
+            </div>
+
+            <!-- empty list to add the items using javacript -->
+            <ul id="list-block">
+                <!-- <li class="checked">task 1</li>
+                <li>task 2</li>
+                <li>task 3</li> -->
+            </ul>
+            <p id="taskCount">Total tasks: <span id="count">0</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

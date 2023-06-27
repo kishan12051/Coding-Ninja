@@ -1,0 +1,126 @@
+/* to remove default styles of webpage */
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+/* settting background image */
+.container{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(135deg, #535151, #d3d4db);
+    padding:10px;
+}
+/* to create a todo list block with proper dimesnions */
+.todoblock{
+    width:100%;
+    max-width:600px;
+    background-color: #e2e2e2;
+    margin: 200px auto 70px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+/* styling the heading of list */
+.todoblock h2{
+    color:rgb(140, 150, 151);
+    display:flex;
+    align-items:center;
+    margin-bottom: 20px;
+
+}
+/* to style image within heading */
+.todoblock h2 img{
+    width:30px;
+    margin-left:10px;
+}
+
+/* styling input section */
+.input-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:rgb(205, 207, 209);
+    border-radius:30px;
+    padding-left: 20px;
+    margin-bottom:25px;
+}
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background: transparent;
+    padding: 10px;
+}
+
+/* styling the add button */
+button{
+    border: 2px;
+    outline:none;
+    padding:16px 50px;
+    background-color: #e2d3d1;
+    color:rgb(133, 130, 130);
+    border-radius: 40px;
+    font-size:16px;
+    cursor:pointer;
+}
+/* style for the list items in todo list which were added using javascript */
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    position:relative;
+}
+
+/* to check and uncheck the list items */
+ul li::before{
+    content: '';
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius: 50px;
+    background-image: url('images/uncheckbutton.png');
+    background-size: cover;
+    background-position: center;
+    top:9px;
+    left:8px;
+}
+
+ul li.checked{
+    color:#85cf7b;
+    font:bold;
+    font-size:  large;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url('images/checkbutton.png');
+}
+
+/* to style the cross mark in front of list items */
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    color:#555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background:rgb(95, 162, 228); ;
+}
+
+#taskCount{
+    margin-top:15px;
+    padding:15px;
+    color: #241036;
+    font-size:large;
+}
