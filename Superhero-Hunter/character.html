@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>SuperHero Hunter</title>
+
+    <!-- Adding icon to tab -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
+
+    <!-- Inserting Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Inserting CSS file -->
+    <link rel="stylesheet" href="./assets/css/character.css">
+    
+    <!-- Inserting Javascript file -->
+    <script src="./assets/js/character.js"></script>
+</head>
+<body>
+
+    <!-- Background  -->
+    <div class="box">
+        <img src="./assets/images/background.jpg" alt="">
+    </div>
+    <!-- Home Page Link -->
+    <div class="favBtn"><a href="./index.html">Home</a></div>
+
+    <!-- Favourite Page Link -->
+    <!-- <div class="favBtn favBtn2"><a href="./favourite.html">Favourite</a></div> -->
+    <div class="homeBtn"><a href="./favourite.html">Favourite</a></div>
+
+    <!-- Container to display Character details -->
+    <div class="container">
+        <div class="img">
+            <img id="img" alt="">
+        </div>
+        <div class="details">
+            <div class="name"id="charName">Spider Man</div>
+            <div class="comics content">
+                <div class="heading">Comics: </div>
+                <div class="comicsList">
+                    <ol type="1" class="comicsOl" id="comicsOl">
+                        <!-- Comic List Item will append here -->
+                    </ol>
+                </div>
+            </div>
+            <div class="events content">
+                <div class="heading">Events: </div>
+                <div class="eventsList">
+                    <ol type="1" class="eventsOl" id="eventsOl">
+                        <!-- Events List Item will append here -->
+                    </ol>
+                </div>
+            </div>
+            <div class="series content">
+                <div class="heading">Series: </div>
+                <div class="seriesList">
+                    <ol type="1" class="seriesOl" id="seriesOl">
+                        <!-- Series List Item will append here -->
+                    </ol>
+                </div>
+            </div>
+            <div class="stories content">
+                <div class="heading">Stories: </div>
+                <div class="storiesList">
+                    <ol type="1" class="storiesOl" id="storiesOl">
+                        <!-- Stories List Item will append here -->
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>  
+</html>      

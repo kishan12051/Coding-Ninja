@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>SuperHero Hunter</title>
+
+    <!-- Adding icon to tab -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
+
+    <!-- Inserting Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Inserting CSS file -->
+    <link rel="stylesheet" href="./assets/css/favourite.css">
+
+    <!-- Inserting JS file -->
+    <script defer src="./assets/js/favourite.js"></script>
+</head>
+<body>
+
+    <!-- Background -->
+    <div class="box">
+        <img src="./assets/images/background.jpg" alt="">
+    </div>
+
+    <!-- Home Page Link -->
+    <div class="favBtn"><a href="./index.html">Home</a></div>
+
+    <!-- Container to display  Favourite characters -->
+    <div class="container">
+        <ul class="ul"id="ul">
+            <!-- Favourite Characters List will append here -->
+        </ul>
+    </div>
+
+    <!-- Info to show whenever no character are there in favourite list -->
+    <div class="noFavChar" id="noFavChar">
+        <p class="desc">
+            Oops! No Favourite in your List.
+            Don't Worry you can add by searching in the list on Home Page.
+            Click here <a href="/Superhero-Hunter-App-Coding-Ninjas">Home</a>
+        </p>
+    </div>
+</body>  
+</html>      

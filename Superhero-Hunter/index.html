@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>SuperHero Hunter</title>
+
+    <!-- Adding icon to tab -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
+    
+    <!-- Inserting Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Inserting CSS file -->
+    <link rel="stylesheet" href="./assets/css/mainpage.css">
+
+    <!-- Inserting Javascript file -->
+    <script defer src="./assets/js/mainpage.js" type="module"></script>
+</head>
+
+<body>
+
+    <!-- Background  -->
+    <div class="box">
+       <img src="./assets/images/background.jpg" alt="">
+    </div>
+
+    <!-- Search List` -->
+    <div class="searchList flex j-c a-s" id="search-list">
+        <p class="notFound"id="notFound">No Character Found</p>
+        <ul class="flex f-c j-s" id="ul">
+            <!-- *********Search List Will Append here********* -->
+        </ul>
+    </div>
+
+    <!-- Show/Hide Characters List -->
+    <button class="showHideList" id="showHideList">Show List</button>
+    
+    <!-- Characters list -->
+    <div class="charList" id="charList">
+        <ul class="charListUl" id="charListUl">
+            <!-- *********Character List Will Append here*********** -->
+        </ul>
+    </div>
+
+    <!-- SearchBar to search characters  -->
+    <div class="searchbar">
+        <input type="text" name="name" id="name" placeholder="Type...">
+        <button class="searchBtn">Search</button>
+    </div>
+
+    <!-- Favourite Characters Link -->
+    <div class="favBtn"><a href="./favourite.html">Favourite</a></div>
+
+    <!-- Mute Unmute button for background video -->
+    <!-- <button id="unmuteBtn" class="unmuteBtn"><i class="fa-solid fa-volume-xmark fa-2x unmuteBtni" id="unmuteBtni"></i></button> -->
+
+</body>  
+
+</html>      
